@@ -25,7 +25,6 @@ Send a tuple of (timestamp, food B temp) to the third queue. </br>
 
 Terminal output </br>
 ![Alt text](image.png)
-</br>
 RabbitMQ </br>
 ![Alt text](image-1.png)
 
