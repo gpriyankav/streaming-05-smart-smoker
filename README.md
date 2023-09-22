@@ -23,8 +23,7 @@ Send a tuple of (timestamp, smoker temp) to the first queue. </br>
 Send a tuple of (timestamp, food A temp) to the second queue. </br>
 Send a tuple of (timestamp, food B temp) to the third queue. </br>
 
-Terminal output </br>
 ![Alt text](image.png)
-RabbitMQ </br>
 ![Alt text](image-1.png)
+
 
