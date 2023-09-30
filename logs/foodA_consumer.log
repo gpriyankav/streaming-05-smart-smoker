@@ -1,35 +1,11 @@
-2023-09-22 08:25:09,059.foodA_consumer.INFO ==================================================
-2023-09-22 08:25:09,059.foodA_consumer.INFO Today is 2023-09-22 at 08:25 AM
-2023-09-22 08:25:09,060.foodA_consumer.INFO Running on: nt Windows 10
-2023-09-22 08:25:09,060.foodA_consumer.INFO Python version:  3.10.8
-2023-09-22 08:25:09,060.foodA_consumer.INFO Python path: C:\Users\KONGA\miniconda3
-2023-09-22 08:25:09,060.foodA_consumer.INFO Working dir: C:\Users\KONGA\Documents\streaming-05-smart-smoker
-2023-09-22 08:25:09,060.foodA_consumer.INFO ==================================================
-2023-09-22 08:25:09,088.foodA_consumer.INFO  [*] Ready for work. To exit press CTRL+C
-2023-09-22 08:25:09,089.foodA_consumer.INFO  [x] Received 05/22/21 12:20:15,
-2023-09-22 08:25:09,089.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,091.foodA_consumer.INFO  [x] Received 05/22/21 12:20:20,
-2023-09-22 08:25:09,091.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,093.foodA_consumer.INFO  [x] Received 05/22/21 12:21:10,
-2023-09-22 08:25:09,093.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,095.foodA_consumer.INFO  [x] Received 05/22/21 12:21:15,
-2023-09-22 08:25:09,095.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,097.foodA_consumer.INFO  [x] Received 05/22/21 12:22:10,
-2023-09-22 08:25:09,098.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,100.foodA_consumer.INFO  [x] Received 05/22/21 12:22:15,
-2023-09-22 08:25:09,101.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,103.foodA_consumer.INFO  [x] Received 05/22/21 12:23:10,
-2023-09-22 08:25:09,104.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,105.foodA_consumer.INFO  [x] Received 05/22/21 12:23:15,
-2023-09-22 08:25:09,106.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,111.foodA_consumer.INFO  [x] Received 05/22/21 12:24:10,
-2023-09-22 08:25:09,112.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,115.foodA_consumer.INFO  [x] Received 05/22/21 12:24:15,
-2023-09-22 08:25:09,116.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,118.foodA_consumer.INFO  [x] Received 05/22/21 12:25:05,
-2023-09-22 08:25:09,119.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:09,120.foodA_consumer.INFO  [x] Received 05/22/21 12:25:10,
-2023-09-22 08:25:09,121.foodA_consumer.INFO  [x] Done.
-2023-09-22 08:25:34,107.foodA_consumer.INFO 
+2023-09-29 21:02:50,888.foodA_consumer.INFO ==================================================
+2023-09-29 21:02:50,889.foodA_consumer.INFO Today is 2023-09-29 at 09:02 PM
+2023-09-29 21:02:50,889.foodA_consumer.INFO Running on: nt Windows 10
+2023-09-29 21:02:50,889.foodA_consumer.INFO Python version:  3.10.8
+2023-09-29 21:02:50,889.foodA_consumer.INFO Python path: C:\Users\KONGA\miniconda3
+2023-09-29 21:02:50,890.foodA_consumer.INFO Working dir: C:\Users\KONGA\Documents\streaming-05-smart-smoker
+2023-09-29 21:02:50,890.foodA_consumer.INFO ==================================================
+2023-09-29 21:02:50,907.foodA_consumer.INFO  [*] Ready for work. To exit press CTRL+C
+2023-09-29 21:03:00,902.foodA_consumer.INFO 
 Closing connection. Goodbye.
 

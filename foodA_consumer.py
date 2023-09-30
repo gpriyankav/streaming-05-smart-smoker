@@ -3,7 +3,7 @@
     Start multiple versions to add more workers.  
 
     Priyanka Gorentla 
-    Modified on : 22nd September 2023  
+    Modified on : 29th September 2023  
 
 """
 
@@ -12,21 +12,38 @@ import sys
 import time
 
 # Configure logging
+from collections import deque
+
+foodA_deque = deque(maxlen = 20)
+
+# Configure logging
 from util_logger import setup_logger
 
 logger, logname = setup_logger(__file__)
 
 # define a callback function to be called when a message is received
-def callback(ch, method, properties, body):
-    """ Define behavior on getting a message."""
-    # decode the binary message body to a string
-    logger.info(f" [x] Received {body.decode()}")
-    # simulate work by sleeping for the number of dots in the message
-    time.sleep(body.count(b"."))
-    # when done with task, tell the user
-    logger.info(" [x] Done.")
-    # acknowledge the message was received and processed 
-    # (now it can be deleted from the queue)
+def callback_foodA(ch, method, properties, body):
+    """Defining our behavior for the alerts"""
+    #Decode the message and split using a comman delimited system
+    tempmesg = body.decode().split(",")
+    try:
+        #Convert temperature to float
+        individualtemp = float(tempmesg[1])
+        #Adding message 
+        foodA_deque.append(individualtemp)
+        #Checking the length of queue
+        if len(foodA_deque) == 20: 
+            #Calculate the change in temperature
+            tempchange = max(foodA_deque) - min(foodA_deque)
+            #Check the change and print an alert
+            if tempchange <= 1:
+                print("Food stall alert! This occurred at " + tempmesg[0])
+       #Pass our empty strings to avoid a value error
+    except ValueError:
+        pass
+     # acknowledge the message was received and processed 
+        logger.info(" [x] foodA temp.")
+     # (now it can be deleted from the queue)
     ch.basic_ack(delivery_tag=method.delivery_tag)
 
 
@@ -74,7 +91,7 @@ def main(hn: str = "localhost", qn: str = "02-food-A"):
         # configure the channel to listen on a specific queue,  
         # use the callback function named callback,
         # and do not auto-acknowledge the message (let the callback handle it)
-        channel.basic_consume( queue=qn, on_message_callback=callback)
+        channel.basic_consume( queue=qn, on_message_callback=callback_foodA)
 
         # print a message to the console for the user
         logger.info(" [*] Ready for work. To exit press CTRL+C")

@@ -10,6 +10,9 @@
 import pika
 import sys
 import time
+from collections import deque
+
+smoker_deque = deque(maxlen = 5)
 
 # Configure logging
 from util_logger import setup_logger
@@ -18,16 +21,29 @@ logger, logname = setup_logger(__file__)
 
 # define a callback function to be called when a message is received
 def callback(ch, method, properties, body):
-    """ Define behavior on getting a message."""
-    # decode the binary message body to a string
-    logger.info(f" [x] Received {body.decode()}")
-    # simulate work by sleeping for the number of dots in the message
-    time.sleep(body.count(b"."))
-    # when done with task, tell the user
-    logger.info(" [x] Done.")
-    # acknowledge the message was received and processed 
-    # (now it can be deleted from the queue)
-    ch.basic_ack(delivery_tag=method.delivery_tag)
+    """Defining our behavior for the alerts"""
+    #Decode the message and split using a comman delimited system
+    tempmesg = body.decode().split(",")
+    try:
+        #Convert temperature to float
+        individualtemp = float(tempmesg[1])
+        #Adding message 
+        smoker_deque.append(individualtemp)
+        #Checking the length of queue
+        if len(smoker_deque) == 5: 
+         #Calculate the change in temperature
+         changetemp = (smoker_deque[0] - smoker_deque[4])
+         #Print alert if smoker temperature decreases by more than 15 degrees F in 2.5 minutes
+         if changetemp > 15:
+                print("Smoker Alert!! This occurred at " + tempmesg[0])
+        # acknowledge the message was received and processed 
+        # (now it can be deleted from the queue)
+        # when done with task, tell the user
+        logger.info(" [x] smoker temp.")
+        ch.basic_ack(delivery_tag=method.delivery_tag)
+    #Pass our empty strings to avoid a value error
+    except ValueError:
+        pass    
 
 
 # define a main function to run the program

@@ -7,29 +7,28 @@
 2023-09-22 08:21:00,000.v1_consumer.INFO ==================================================
 2023-09-22 08:21:00,034.v1_consumer.INFO  [*] Ready for work. To exit press CTRL+C
 2023-09-22 08:21:00,036.v1_consumer.INFO  [x] Received 05/22/21 12:20:15,84.2
-2023-09-22 08:21:01,045.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:01,045.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:01,052.v1_consumer.INFO  [x] Received 05/22/21 12:20:20,84.2
-2023-09-22 08:21:02,060.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:02,060.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:02,064.v1_consumer.INFO  [x] Received 05/22/21 12:21:10,87.6
-2023-09-22 08:21:03,078.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:03,078.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:03,080.v1_consumer.INFO  [x] Received 05/22/21 12:21:15,87.6
-2023-09-22 08:21:04,089.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:04,089.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:04,092.v1_consumer.INFO  [x] Received 05/22/21 12:22:10,86.3
-2023-09-22 08:21:05,101.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:05,101.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:05,103.v1_consumer.INFO  [x] Received 05/22/21 12:22:15,86.3
-2023-09-22 08:21:06,113.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:06,113.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:06,117.v1_consumer.INFO  [x] Received 05/22/21 12:23:10,92.0
-2023-09-22 08:21:07,125.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:07,125.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:07,127.v1_consumer.INFO  [x] Received 05/22/21 12:23:15,92.0
-2023-09-22 08:21:08,136.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:08,136.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:08,139.v1_consumer.INFO  [x] Received 05/22/21 12:24:10,96.8
-2023-09-22 08:21:09,148.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:09,148.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:09,150.v1_consumer.INFO  [x] Received 05/22/21 12:24:15,96.8
-2023-09-22 08:21:10,161.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:10,161.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:10,164.v1_consumer.INFO  [x] Received 05/22/21 12:25:05,100.6
-2023-09-22 08:21:11,174.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:11,174.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:11,178.v1_consumer.INFO  [x] Received 05/22/21 12:25:10,100.9
-2023-09-22 08:21:12,189.v1_consumer.INFO  [x] Done.
+2023-09-22 08:21:12,189.v1_consumer.INFO  [x] smoker temp.
 2023-09-22 08:21:40,053.v1_consumer.INFO 
 Closing connection. Goodbye.
-
